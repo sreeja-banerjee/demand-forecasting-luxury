@@ -1,0 +1,3 @@
+method,WAPE,bias
+Moving average (8 wk),0.724,-0.028
+Gradient boosting (Poisson),0.679,0.018
