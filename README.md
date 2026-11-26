@@ -77,9 +77,7 @@ Suggestion for order given if stock on hand plus stock on order is at or below t
 
 - **Simulated data:** We tried to make the patterns (seasonality, lumpy demand, lead times) realistic by design. But results are (obviously) not going to be realistic to what a real brand might have to do.
 - **True demand not captured:** Both forecasts train from units sold, which might understate true demand (e.g. maybe a product is trending currently that was not in the past). There might be under-forecasting present.
-- **Two lenses can disagree.** Weeks of cover uses stock on hand only, while the reorder trigger uses the whole lead-time horizon. A pair can be labelled "Overstock" today and still receive an order if its lead time is long and demand is volatile (e.g. Milan P07: 12.3 weeks of cover, 11-week lead time).
-- **No scarcity constraint.** Each store is planned independently, as if supply were unlimited. Real luxury allocation shares a fixed buy across stores.
-- **Snapshot timing.** The plan is built at one point in time (the week after Christmas), which inflates order quantities.
+- **Overinflated snapshot:** reorder plan is built using the week after Christmas, which inflates order quantities.
 
 ---
 
